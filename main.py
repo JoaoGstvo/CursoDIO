@@ -47,8 +47,12 @@
 # 05. Implementar uma função que escreva no terminal os números naturais de 1 até um número informado de forma decrescente.
 # Ex: (10) => 10 9 8 7 6 5 4 3 2 1
 
+def descrecentar():
+    numero = int(input())
+    for i in range(numero, 0, -1):
+        print(i, end=' ')
 
-
+descrecentar()
 #-----------------------------------------------------------------------------------------------------------------------
 
 # 06. Implementar uma função que escreva no terminal os números naturais pares de 0 até um número informado de forma decrescente.
@@ -248,7 +252,19 @@
 
 #-----------------------------------------------------------------------------------------------------------------------
 
-# dqowdnoqndowqndoqw
+# 18. Implementar uma função que calcule a soma dos números pares naturais de 1 até um número informado.
+# Ex: Somar pares de 1 até 5 => 2+4 => 6
+
+# def somar():
+#     numero = int(input())
+#     soma = 0
+#     for i in range(1, numero+1):
+#         if i % 2 == 0:
+#             print(str(i) + '+', end='')
+#             soma += i
+#     print ('=', soma)
+            
+# somar()
 
 
 
