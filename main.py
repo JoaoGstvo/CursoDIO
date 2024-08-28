@@ -47,12 +47,12 @@
 # 05. Implementar uma função que escreva no terminal os números naturais de 1 até um número informado de forma decrescente.
 # Ex: (10) => 10 9 8 7 6 5 4 3 2 1
 
-def descrecentar():
-    numero = int(input())
-    for i in range(numero, 0, -1):
-        print(i, end=' ')
+# def descrecentar():
+#     numero = int(input())
+#     for i in range(numero, 0, -1):
+#         print(i, end=' ')
 
-descrecentar()
+# descrecentar()
 #-----------------------------------------------------------------------------------------------------------------------
 
 # 06. Implementar uma função que escreva no terminal os números naturais pares de 0 até um número informado de forma decrescente.
@@ -265,6 +265,8 @@ descrecentar()
 #     print ('=', soma)
             
 # somar()
+
+
 
 
 

@@ -121,3 +121,71 @@
 #         continue
 
 #     print(numero)
+
+#-----------------------------------------------------------------------------------------------------------------------
+
+# Strings
+
+# curso = "pYthon"
+# print(curso.upper())
+# print(curso.lower())
+# print(curso.title())
+
+# curso = "     Python "
+# print(curso.strip())
+# print(curso.lstrip())
+# print(curso.rstrip())
+
+# curso = "Python"
+# print(curso.center(10, "#"))
+# print(".".join(curso))
+
+
+# Concatenação com formatação de casas decimais
+
+# nome = "Guilherme"
+# idade = 28
+# profissao = "Progamador"
+# linguagem = "Python"
+# saldo = 45.435
+
+# # print(f"Nome: {nome} Idade: {idade} Saldo: {saldo:.2f}")
+# print(f"Nome: {nome} Idade: {idade} Saldo: {saldo:10.1f}")
+
+
+# Fatiação de Strings
+
+# nome = "João Gustavo do Carmo Moraes"
+# print(nome[0])
+# print(nome[-2])
+# print(nome[:9])
+# print(nome[10:])
+# print(nome[10:16])
+# print(nome[10:16:2])
+# print(nome[:])
+# print(nome[::-1])
+
+
+# Strings Triplas
+
+# nome = "João"
+# mensagem = f"""
+# Olá meu nome é {nome},
+# Eu estou aprendendo Python.
+# Essa mensagem tem diferentes recuos.
+# """
+# print(mensagem)
+
+# print(
+#     """
+#     ============= MENU =============
+
+#     1 - Depositar
+#     2 - Sacar
+#     0 - Sair
+
+#     ================================
+
+#     Obrigado por usar nosso sistema!!!!
+# """
+# )
