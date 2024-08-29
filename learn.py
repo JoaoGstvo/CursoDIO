@@ -189,3 +189,28 @@
 #     Obrigado por usar nosso sistema!!!!
 # """
 # )
+
+#-----------------------------------------------------------------------------------------------------------------------
+
+# Kwargs e *args
+
+# def configurar_carro(**kwargs):
+#     if 'cor' in kwargs:
+#         print(f"Carro configurado com a cor: {kwargs['cor']}")
+#     if 'modelo' in kwargs:
+#         print(f"Modelo do carro: {kwargs['modelo']}")
+#     if 'ano' in kwargs:
+#         print(f"Ano do carro: {kwargs['ano']}")
+
+# # Chamando a função com diferentes combinações de parâmetros
+# configurar_carro(cor="Vermelho", modelo="SUV", ano=2022)
+
+
+# def soma(*args):
+#     return sum(args)
+
+# print(soma(1, 2, 3))  # Saída: 6
+# print(soma(10, 20))
+
+#-----------------------------------------------------------------------------------------------------------------------
+
