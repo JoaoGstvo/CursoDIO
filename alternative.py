@@ -15,3 +15,19 @@
 #         print("Delta resultou em um valor negativo, portanto, não é possível calcular as raízes!")
 
 # bhaskara()
+
+
+# lista = []
+# selecao = []
+# i = 0
+# while i < 10:
+#     lista.append(int(input()))
+#     i+=1
+# print(lista)
+# for i in lista:
+#     if i % 2 ==0:
+#         selecao.append(i**2)
+
+# print(selecao)
+
+

@@ -1,6 +1,5 @@
 import os
 
-
 def depositar(saldo):
     deposito = float(input("Informe o valor a ser depositado: "))
     extrato = ""
@@ -48,9 +47,7 @@ LIMITE_DIARIO = 3
 i= 0
 
 while True:
-
-
-
+    
     menu = f"""
         ⊰᯽⊱┈──╌♤ MENU ♤╌──┈⊰᯽⊱
         Saldo: R${saldo:.2f}
