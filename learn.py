@@ -326,3 +326,49 @@
 
 #-----------------------------------------------------------------------------------------------------------------------
 
+# # Criar um dicionário
+# meu_dict = {'nome': 'João', 'idade': 25, 'cidade': 'São Paulo'}
+
+# # Adicionar ou atualizar elementos
+# meu_dict['profissão'] = 'Engenheiro'  # Adiciona uma nova chave-valor
+# meu_dict['idade'] = 26                # Atualiza o valor de uma chave existente
+
+# # Remover elementos
+# meu_dict.pop('cidade')                # Remove a chave 'cidade' e retorna o valor associado
+# meu_dict.popitem()                    # Remove e retorna o último par chave-valor inserido
+# del meu_dict['profissão']             # Remove a chave 'profissão'
+# meu_dict.clear()                      # Remove todos os elementos do dicionário
+
+# # Acessar elementos
+# valor = meu_dict['nome']              # Acessa o valor associado à chave 'nome'
+# valor = meu_dict.get('idade', 30)     # Retorna o valor de 'idade', ou 30 se não existir
+
+# # Verificar a existência de uma chave
+# if 'idade' in meu_dict:
+#     print("A chave 'idade' está presente no dicionário")
+
+# # Tamanho do dicionário
+# tamanho = len(meu_dict)
+
+# # Obter todas as chaves, valores ou itens (pares chave-valor)
+# chaves = meu_dict.keys()              # Retorna todas as chaves
+# valores = meu_dict.values()           # Retorna todos os valores
+# itens = meu_dict.items()              # Retorna todos os pares chave-valor
+
+# # Atualizar um dicionário com outro
+# outro_dict = {'altura': 180, 'peso': 75}
+# meu_dict.update(outro_dict)           # Atualiza meu_dict com os pares chave-valor de outro_dict
+
+# # Iterar sobre o dicionário
+# for chave, valor in meu_dict.items():
+#     print(f'{chave}: {valor}')        # Itera sobre as chaves e valores
+
+# # Copiar um dicionário
+# copia_dict = meu_dict.copy()
+
+# # Criar um dicionário com chaves padronizadas
+# chaves_padrao = ['a', 'b', 'c']
+# meu_dict = dict.fromkeys(chaves_padrao, 0)  # Cria um dicionário com todas as chaves tendo valor 0
+
+# # Obter um valor com um valor padrão se a chave não existir
+# valor = meu_dict.setdefault('nome', 'Desconhecido')  # Retorna o valor de 'nome', ou define 'Desconhecido' se não existir
