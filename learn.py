@@ -372,3 +372,63 @@
 
 # # Obter um valor com um valor padrão se a chave não existir
 # valor = meu_dict.setdefault('nome', 'Desconhecido')  # Retorna o valor de 'nome', ou define 'Desconhecido' se não existir
+
+#-----------------------------------------------------------------------------------------------------------------------
+
+# from datetime import datetime, date, time, timedelta
+
+# # Obter a data e hora atual
+# agora = datetime.now()                 # Retorna a data e hora atuais
+# hoje = date.today()                    # Retorna a data atual (somente a parte da data)
+
+# # Criar um objeto de data
+# minha_data = date(2024, 9, 12)         # Cria uma data específica (ano, mês, dia)
+
+# # Criar um objeto de tempo
+# meu_tempo = time(14, 30, 45)           # Cria um horário específico (hora, minuto, segundo)
+
+# # Criar um objeto de data e hora
+# minha_data_hora = datetime(2024, 9, 12, 14, 30, 45)  # Cria uma data e hora específicas
+
+# # Extrair informações de uma data/hora
+# ano = agora.year                       # Obtém o ano atual
+# mes = agora.month                      # Obtém o mês atual
+# dia = agora.day                        # Obtém o dia atual
+# hora = agora.hour                      # Obtém a hora atual
+# minuto = agora.minute                  # Obtém o minuto atual
+# segundo = agora.second                 # Obtém o segundo atual
+
+# # Formatar data/hora como string
+# data_formatada = agora.strftime('%d/%m/%Y')         # Formata a data como 'dia/mês/ano'
+# hora_formatada = agora.strftime('%H:%M:%S')         # Formata o horário como 'hora:minuto:segundo'
+
+# # Converter string para data/hora
+# data_convertida = datetime.strptime('12/09/2024', '%d/%m/%Y')  # Converte uma string para datetime
+
+# # Trabalhar com diferenças de tempo (timedelta)
+# delta = timedelta(days=10, hours=2)   # Define um intervalo de 10 dias e 2 horas
+# nova_data = agora + delta              # Adiciona o intervalo à data/hora atual
+# data_passada = agora - delta           # Subtrai o intervalo da data/hora atual
+
+# # Calcular a diferença entre duas datas
+# data1 = datetime(2024, 9, 12)
+# data2 = datetime(2024, 10, 2)
+# diferenca = data2 - data1              # Retorna a diferença como um timedelta
+
+# # Comparar datas
+# if data1 < data2:
+#     print("data1 é anterior a data2")
+
+# # Obter o timestamp atual
+# timestamp = agora.timestamp()          # Retorna o timestamp atual (segundos desde 01/01/1970)
+
+# # Converter timestamp para data/hora
+# data_timestamp = datetime.fromtimestamp(timestamp)  # Converte o timestamp para datetime
+
+# # Obter o dia da semana
+# dia_semana = agora.weekday()           # Retorna o dia da semana (0 = segunda-feira, 6 = domingo)
+# dia_semana_nome = agora.strftime('%A') # Retorna o nome do dia da semana (ex: 'Monday')
+
+# # Adicionar ou subtrair horas/minutos/segundos
+# nova_hora = agora + timedelta(hours=5)    # Adiciona 5 horas à data e hora atual
+# nova_data = agora - timedelta(weeks=2)    # Subtrai 2 semanas da data e hora atual

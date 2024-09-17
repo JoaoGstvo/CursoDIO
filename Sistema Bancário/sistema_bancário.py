@@ -3,12 +3,12 @@ import os
 def depositar(saldo):
     deposito = float(input("Informe o valor a ser depositado: "))
     extrato = ""
-    if deposito > 0:
+    if deposito >= 1:
         saldo += deposito
         extrato = f"Depósito de R${deposito:.2f}"
         print(f"Depósito realizado com sucesso! Saldo atual: {saldo}")
     else:
-        print("Valor inválido. Por favor, insira um valor positivo.")
+        print("Valor inválido. Por favor, insira um valor maior que 1.")
 
     return saldo, extrato
 
@@ -19,7 +19,7 @@ def sacar(saldo):
     extrato = ""
     saque = float(input("Informe o valor a ser sacado: "))
 
-    if saque > float(0) and saque <= LIMITE_VALOR and saque <= saldo:
+    if saque >= float(1) and saque <= LIMITE_VALOR and saque <= saldo:
         saldo -= saque
         extrato = f"Saque de R${saque:.2f}"
         print(f"Saque realizado com sucesso! Seu saldo atual é de: {saldo}")
@@ -40,27 +40,73 @@ def ver_extrato(extrato):
     return extrato
 
 
+def criar_conta(identificador_conta):
+    conta = {
+        "id": identificador_conta,
+        "nome": input("Digite seu nome: "),
+        "senha": input("Crie sua senha (Apenas letras): "),
+    }
+    return conta
+
 
 saldo = 0
 extrato = []
-LIMITE_DIARIO = 3
+contas = {}
 i= 0
+identificador_conta = 0
+LIMITE_DIARIO = 3
+SENHA_ADM = "ADM"
+
+menu_adm = f"""
+        ⊰᯽⊱┈──╌♤ MENU ADM ♤╌──┈⊰᯽⊱
+
+        [a]Visualizar Contas
+        [b]Remover Conta
+        => """
+
+menu = f"""
+    ⊰᯽⊱┈──╌♤ MENU ♤╌──┈⊰᯽⊱
+    Saldo: R${saldo:.2f}
+    [a]Criar Conta
+    [d]Depositar
+    [s]Sacar
+    [e]Extrato
+    [q]Sair
+    [r]ADM
+    => """
 
 while True:
     
-    menu = f"""
-        ⊰᯽⊱┈──╌♤ MENU ♤╌──┈⊰᯽⊱
-        Saldo: R${saldo:.2f}
-        [d]Depositar
-        [s]Sacar
-        [e]Extrato
-        [q]Sair
-        => """
     print(menu)
-        
+
     opcao = input("Opção: ")
 
     match opcao:
+
+        case "a":
+            os.system('cls')
+            identificador_conta += 1
+            nova_conta = criar_conta(identificador_conta)
+            contas.update(nova_conta)
+            print("Conta criada com sucesso!")
+            
+        case "r":
+            os.system('cls')
+            senha = input("Digite a senha: ")
+
+            if senha == SENHA_ADM:
+                os.system('cls')
+                
+                print(menu_adm)
+                opcao_adm = input("Opção: ")
+
+                match opcao_adm:
+                    case "a":
+                        os.system('cls')
+                        print(contas.values())
+                    # case "b":
+                    #     print()
+        
         case "d":
             os.system('cls')
             saldo, extrato_atual = depositar(saldo)
@@ -89,7 +135,7 @@ while True:
             print("Opção inválida burro!")
            
 
-
+    
 
 
 

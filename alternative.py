@@ -77,3 +77,8 @@
 #     print(i)
 
 # print(meu_dicionario)
+
+from datetime import date, datetime
+
+data = datetime.today()
+print(data)
